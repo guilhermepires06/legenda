@@ -1,6 +1,6 @@
 # 📄 Guia de Instalação - Live Subtitle Translator
 
-Siga os passos abaixo para configurar e executar a ferramenta no seu computador Windows[cite: 2, 3].
+Siga os passos abaixo para configurar e executar a ferramenta no seu computador Windows.
 
 ---
 
