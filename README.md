@@ -37,3 +37,52 @@ Cria uma pasta no teu computador (por exemplo: `C:\Users\TeuUtilizador\Desktop\l
 Para garantir que as dependências ficam isoladas e limpas, cria o ambiente virtual:
 ```powershell
 python -m venv .venv
+
+Passo 4: Ativar o Ambiente Virtual
+Ativa o ambiente criado executando o seguinte comando no PowerShell:
+
+PowerShell
+.venv\Scripts\Activate.ps1
+Nota: Se aparecer um erro de permissão a informar que a execução de scripts está desativada, executa primeiro este comando na consola:
+
+Set-ExecutionPolicy Unrestricted -Scope Process
+
+Depois, volta a executar o comando de ativação (.venv\Scripts\Activate.ps1).
+
+Quando ativo, verás (.venv) no início da linha do terminal.
+
+Passo 5: Executar o Programa
+Com o ambiente virtual ativo ((.venv) visível no terminal), basta correres o script principal:
+
+PowerShell
+python rodar_tradutor.py
+(Na primeira execução, o script descarrega e instala automaticamente todas as bibliotecas necessárias como mss, pytesseract, pillow, googletrans e legacy-cgi).
+
+Passo 6: Usar o Tradutor
+Uma janela gráfica de menu vai abrir-se no ecrã automaticamente.
+
+Clica no botão "Selecionar Área e Traduzir".
+
+O ecrã ficará ligeiramente escuro/cinzento; clica e arrasta o rato à volta das legendas do vídeo.
+
+A tradução aparecerá automaticamente numa barra preta na parte inferior do ecrã.
+
+Para parar a tradução e voltar ao menu principal, basta clicar em cima da barra de tradução.
+
+🛠 Tecnologias Utilizadas
+Python (Linguagem principal)
+
+Tkinter (Menu gráfico, seletor de ecrã e janela de overlay)
+
+MSS (Captura de ecrã ultrarrápida)
+
+Pillow & ImageEnhance (Processamento de imagem e melhoria de contraste para otimizar o OCR)
+
+PyTesseract (Extração de texto via OCR)
+
+Googletrans (Tradução automática em tempo real)
+
+📝 Licença
+Este projeto é de código aberto e está licenciado sob a licença MIT. Sinta-se livre para contribuir, modificar e melhorar!
+
+
